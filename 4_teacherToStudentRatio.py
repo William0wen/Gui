@@ -8,7 +8,7 @@ while loop != "No":
     class_size = easygui.integerbox("What is the maximum number of children allowed per class;"
                                     "\n(Must be a number between 10 and 30)", upperbound=30, lowerbound=10)
     tot_children = easygui.integerbox(f"What is the total number of children at {school}"
-                                  "\n(Must be a number between 10 and 1400)", upperbound=1400, lowerbound=10)
+                                      "\n(Must be a number between 10 and 1400)", upperbound=1400, lowerbound=10)
     teachers = easygui.integerbox(f"How many teachers are at {school}?"
                                   f"\n(Must be a number between 1 and 120)", lowerbound=1, upperbound=120)
 
