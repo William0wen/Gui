@@ -3,7 +3,9 @@ import math
 
 loop = ""
 
+# Entry loop
 while loop != "No":
+    # Getting info
     school = easygui.enterbox("Enter the name of the school").title()
     class_size = easygui.integerbox("What is the maximum number of children allowed per class;"
                                     "\n(Must be a number between 10 and 30)", upperbound=30, lowerbound=10)
@@ -12,8 +14,10 @@ while loop != "No":
     teachers = easygui.integerbox(f"How many teachers are at {school}?"
                                   f"\n(Must be a number between 1 and 120)", lowerbound=1, upperbound=120)
 
+    # Calculating classes needed
     classes_needed = math.ceil(tot_children / class_size)
 
+    # Checking numbers
     if teachers == classes_needed:
         easygui.msgbox("You have just the right amount of teachers for the classes.")
     elif teachers < classes_needed:
@@ -23,6 +27,7 @@ while loop != "No":
         easygui.msgbox("You have too many teachers"
                        f"\nYou could do with {teachers - classes_needed} less teachers")
 
+    # Loop query
     loop = easygui.buttonbox("Do you want to do another calculation", choices=["Yes", "No"])
 
 easygui.msgbox("Goodbye")
