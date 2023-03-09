@@ -1,7 +1,7 @@
 import easygui
 import random
 
-card_numbers = ["Second", "Third", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"]
+card_numbers = ["Two", "Third", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"]
 card_suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 replay = ""
 
